@@ -8,7 +8,7 @@ const routes = [
   },
   {
     path: "/:catchAll(.*)",
-    name: "BvrCheckoutPageNotFound",
+    name: "PageNotFound",
     component: () => import("@/pages/404.vue"),
   },
 ];

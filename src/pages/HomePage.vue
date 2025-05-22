@@ -1,14 +1,16 @@
 <template>
-	<div class="wedding-page">
-		<HeroSection />
-		<DateSection />
-		<SpecialDaySection />
-		<ScheduleSection />
-		<RsvpSection />
-		<DetailsSection />
-		<HotelsSection />
-		<GiftsSection />
-	</div>
+	<BaseLayout>
+		<div class="wedding-page">
+			<HeroSection />
+			<DateSection />
+			<SpecialDaySection />
+			<ScheduleSection />
+			<RsvpSection />
+			<DetailsSection />
+			<HotelsSection />
+			<GiftsSection />
+		</div>
+	</BaseLayout>
 </template>
 
 <script lang="ts" setup>
@@ -20,4 +22,5 @@ import RsvpSection from "@/components/RsvpSection.vue";
 import DetailsSection from "@/components/DetailsSection.vue";
 import HotelsSection from "@/components/HotelsSection.vue";
 import GiftsSection from "@/components/GiftsSection.vue";
+import BaseLayout from "@/layouts/BaseLayout.vue";
 </script>

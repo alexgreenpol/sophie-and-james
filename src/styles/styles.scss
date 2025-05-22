@@ -1,0 +1,84 @@
+@font-face {
+	font-family: "EB Garamond";
+	src: url("@/assets/fonts/EBGaramond-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cezanne";
+	src: url("@/assets/fonts/p22-cezanne-pro.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: "EB Garamond", serif;
+	font-size: 20px;
+	color: #303030;
+
+	@media (min-width: $breakpoint-md-min) {
+		font-size: 24px;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: inherit;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Cezanne";
+	line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+h2 {
+	font-size: 50px;
+	margin-bottom: 50px;
+
+	@media (min-width: $breakpoint-sm-min) {
+		font-size: 60px;
+		margin-bottom: 60px;
+	}
+
+	@media (min-width: $breakpoint-md-min) {
+		font-size: 70px;
+		margin-bottom: 70px;
+	}
+
+	@media (min-width: $breakpoint-lg-min) {
+		font-size: 80px;
+		margin-bottom: 80px;
+	}
+}
+
+.base-padding {
+	padding: 50px 20px;
+
+	@media (min-width: $breakpoint-sm-min) {
+		padding: 60px 30px;
+	}
+
+	@media (min-width: $breakpoint-md-min) {
+		padding: 80px 40px;
+	}
+
+	@media (min-width: $breakpoint-lg-min) {
+		padding: 100px;
+	}
+}
